@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Naseeha AI</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.6;
+    color: #1c1c1e;
+  }
+  h1 { color: #0F4A2C; font-size: 28px; margin-bottom: 4px; }
+  h2 { color: #0F4A2C; font-size: 20px; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin-top: 24px; }
+  .updated { color: #6e6e73; font-size: 14px; margin-bottom: 32px; }
+  .highlight {
+    background: #fff8e6;
+    border-left: 4px solid #d4a017;
+    padding: 12px 16px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+  th { background: #f5f5f7; }
+  a { color: #0F4A2C; }
+  .contact { background: #f5f5f7; padding: 16px 20px; border-radius: 8px; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Naseeha AI · Last updated: 11 July 2026</p>
+
+<p>This Privacy Policy explains how Naseeha AI ("Naseeha," "the App," "we," "us") collects, uses, and protects your information when you use our iOS application. Naseeha is developed and operated by Mohamed Amer, as an individual developer, based in Germany.</p>
+
+<div class="highlight">
+<strong>A note specific to Naseeha:</strong> because Naseeha's core purpose is helping Muslim investors track halal-compliant portfolios and calculate Zakat, using these features inherently reveals information about your religious beliefs and practices. Under EU data protection law (GDPR Article 9), this is treated as a <strong>special category of personal data</strong> — the same heightened protection given to health or political data. We ask for your explicit consent to this before you can use the halal screening and Zakat features, and this policy explains exactly what that means.
+</div>
+
+<h2>1. Who is responsible for your data (the "Data Controller")</h2>
+<p>Mohamed Amer, operating Naseeha AI as an individual developer.<br>
+Contact: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a></p>
+
+<h2>2. What data we collect</h2>
+<table>
+<tr><th>Category</th><th>Examples</th><th>Why</th></tr>
+<tr>
+  <td>Account data</td>
+  <td>Email address, or identifiers from Sign in with Apple / Sign in with Google</td>
+  <td>To create and secure your account</td>
+</tr>
+<tr>
+  <td>Portfolio data</td>
+  <td>Asset holdings, purchase/sale lots, quantities, prices, platforms, dates — entered manually or extracted from broker statements you upload</td>
+  <td>Core app functionality — tracking your portfolio</td>
+</tr>
+<tr>
+  <td>Uploaded documents</td>
+  <td>Broker/exchange statement PDFs or CSVs you choose to upload</td>
+  <td>To extract transaction data via automated processing (see Section 4)</td>
+</tr>
+<tr>
+  <td><strong>Religious/faith-related data</strong></td>
+  <td>Use of halal screening results, Zakat calculations, and related preferences</td>
+  <td>Core app functionality — this reveals your religious practice and is treated as special category data (see Section 3)</td>
+</tr>
+<tr>
+  <td>Chat messages</td>
+  <td>Messages you send to the "Naseeha" AI assistant, and its responses</td>
+  <td>To provide portfolio-aware financial guidance</td>
+</tr>
+<tr>
+  <td>Device push token</td>
+  <td>An Apple-issued token identifying your device for notifications</td>
+  <td>To send price alerts and portfolio digests you've enabled</td>
+</tr>
+<tr>
+  <td>Support communications</td>
+  <td>Messages you send via in-app support tickets</td>
+  <td>To respond to your questions or issues</td>
+</tr>
+<tr>
+  <td>Usage data</td>
+  <td>Number of AI chat messages sent per month</td>
+  <td>To manage service usage tiers</td>
+</tr>
+</table>
+
+<p>We do <strong>not</strong> collect precise location, contacts, photos (beyond documents you explicitly choose to upload), or browsing history outside the app.</p>
+
+<h2>3. Special category data: halal screening & Zakat</h2>
+<p>Because engaging with Naseeha's halal-compliance and Zakat features discloses that you are Muslim or practicing Islamic finance principles, this data receives extra protection:</p>
+<ul>
+<li>We ask for your <strong>explicit, separate consent</strong> before these features are activated on your account, distinct from your general acceptance of this policy.</li>
+<li>This data is never used for advertising, never sold, and never shared with any third party for marketing purposes.</li>
+<li>You can withdraw this consent at any time in Settings, which disables these features and lets you request deletion of related data (see Section 8).</li>
+<li>Access to this data internally is limited to what's technically necessary to run the automated screening and calculation features described in Section 4.</li>
+</ul>
+
+<h2>4. Automated processing & AI</h2>
+<p>Naseeha uses AI (Anthropic's Claude models) for three purposes:</p>
+<ul>
+<li><strong>Halal screening</strong> — analyzing publicly available financial and business information about an asset to assess Shariah compliance. Only the asset's identifying information (e.g. ticker, name) is sent — not your personal or portfolio data.</li>
+<li><strong>Portfolio chat assistant ("Naseeha")</strong> — your messages, along with relevant portfolio context (holdings, values, Zakat status) needed to answer your question, are sent to Anthropic's API to generate a response.</li>
+<li><strong>Statement import</strong> — uploaded broker statement documents are sent to Anthropic's API (vision-capable models) to extract transaction data automatically.</li>
+</ul>
+<p>Anthropic (PBC, USA) processes this data as our sub-processor under a data processing agreement and Standard Contractual Clauses (SCCs) for international transfer, since Anthropic's infrastructure is US-based. Anthropic does not use data submitted via its API to train its models.</p>
+
+<h2>5. Other service providers (sub-processors)</h2>
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr>
+<tr><td>Supabase (hosted in Frankfurt, Germany, EU)</td><td>Database, authentication, file storage, backend infrastructure</td><td>All account and portfolio data described above</td></tr>
+<tr><td>Anthropic PBC (USA)</td><td>AI processing (see Section 4)</td><td>Chat messages, asset identifiers, uploaded statement content</td></tr>
+<tr><td>Apple Inc.</td><td>Sign in with Apple, push notifications (APNs)</td><td>Apple ID identifier (if used), device push token</td></tr>
+<tr><td>Google LLC</td><td>Sign in with Google (if used)</td><td>Google account identifier, basic profile info</td></tr>
+<tr><td>CoinGecko, Yahoo Finance, Frankfurter (FX rates)</td><td>Public market price data</td><td>None of your personal data is sent — these are one-way public data lookups</td></tr>
+</table>
+
+<h2>6. Legal basis for processing (GDPR)</h2>
+<ul>
+<li><strong>Contract necessity</strong> — processing needed to provide the core app functionality you've signed up for (account, portfolio tracking, chat).</li>
+<li><strong>Explicit consent</strong> — for special category data (halal/Zakat features, Section 3), and for optional push notifications.</li>
+<li><strong>Legitimate interest</strong> — for basic security, fraud prevention, and service reliability, balanced against your rights.</li>
+</ul>
+
+<h2>7. Data retention</h2>
+<p>We keep your data for as long as your account is active. If you delete your account, your portfolio data, chat history, and uploaded documents are deleted within 30 days, except where we're legally required to retain certain records for longer.</p>
+
+<h2>8. Your rights</h2>
+<p>Under GDPR and similar laws, you have the right to:</p>
+<ul>
+<li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+<li><strong>Rectification</strong> — correct inaccurate data</li>
+<li><strong>Erasure</strong> — request deletion of your account and associated data</li>
+<li><strong>Portability</strong> — receive your portfolio data in a portable format</li>
+<li><strong>Withdraw consent</strong> — for special category data or notifications, at any time</li>
+<li><strong>Object</strong> — to certain processing based on legitimate interest</li>
+<li><strong>Lodge a complaint</strong> — with your local data protection supervisory authority</li>
+</ul>
+<p>To exercise any of these rights, use the in-app "Clear All Data" option in Settings, or contact us directly (see Section 11).</p>
+
+<h2>9. Security</h2>
+<p>Your data is protected using row-level security (each user can only access their own data at the database level), encryption in transit (HTTPS/TLS), and access controls on our backend infrastructure. No system is completely immune to risk, but we take reasonable, industry-standard measures to protect your information.</p>
+
+<h2>10. Children's privacy</h2>
+<p>Naseeha is not directed at, and should not be used by, anyone under 18. We do not knowingly collect data from minors. If you believe a minor has provided us data, contact us and we will delete it.</p>
+
+<h2>11. Contact us</h2>
+<div class="contact">
+Mohamed Amer<br>
+Email: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a>
+</div>
+
+<h2>12. Changes to this policy</h2>
+<p>We may update this policy as the app evolves. Material changes affecting special category data or your rights will be highlighted in-app before they take effect.</p>
+
+</body>
+</html>
