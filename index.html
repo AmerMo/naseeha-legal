@@ -34,7 +34,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Naseeha AI · Last updated: 4 October 2026</p>
+<p class="updated">Naseeha AI · Last updated: 10 October 2026</p>
 
 <p>This Privacy Policy explains how Naseeha AI ("Naseeha," "the App," "we," "us") collects, uses, and protects your information when you use our iOS application. Naseeha is developed and operated by Mohamed Amer, as an individual developer, based in Germany.</p>
 
@@ -73,6 +73,11 @@ Contact: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a></p>
   <td>Chat messages</td>
   <td>Messages you send to the "Naseeha" AI assistant, and its responses</td>
   <td>To provide portfolio-aware financial guidance</td>
+</tr>
+<tr>
+  <td>Exchange connection (optional)</td>
+  <td>If you connect a crypto exchange (currently OKX): the read-only API key, secret and passphrase you create there, and the balances and trade history read with that key</td>
+  <td>To keep your portfolio in step with your exchange account. Only read access is used — Naseeha never trades or withdraws</td>
 </tr>
 <tr>
   <td>Device push token</td>
@@ -118,7 +123,8 @@ Contact: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a></p>
 <tr><td>Anthropic PBC (USA)</td><td>AI processing (see Section 4)</td><td>Chat messages, asset identifiers, uploaded statement content</td></tr>
 <tr><td>Apple Inc.</td><td>Sign in with Apple, push notifications (APNs)</td><td>Apple ID identifier (if used), device push token</td></tr>
 <tr><td>Google LLC</td><td>Sign in with Google (if used)</td><td>Google account identifier, basic profile info</td></tr>
-<tr><td>CoinGecko, Yahoo Finance, Frankfurter and open.er-api.com (FX rates)</td><td>Public market price data</td><td>None of your personal data is sent — these are one-way public data lookups</td></tr>
+<tr><td>OKX (only if you connect it)</td><td>Reading your balances and trade history from your own OKX account</td><td>Your read-only API key is sent to OKX to authenticate those requests; no other personal data</td></tr>
+<tr><td>CoinGecko, Yahoo Finance, Frankfurter and open.er-api.com (FX rates)</td><td>Public market price data, including historical prices used to value exchange trades</td><td>None of your personal data is sent — these are one-way public data lookups</td></tr>
 </table>
 
 <h2>6. Legal basis for processing (GDPR)</h2>
@@ -129,7 +135,7 @@ Contact: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a></p>
 </ul>
 
 <h2>7. Data retention</h2>
-<p>We keep your data for as long as your account is active. If you delete your account, your portfolio data, chat history, and uploaded documents are deleted within 30 days, except where we're legally required to retain certain records for longer.</p>
+<p>Exchange API keys are deleted when you disconnect the exchange in the app (your recorded holdings stay), when you use "Clear All Data", or when your account is deleted. We keep your data for as long as your account is active. If you delete your account, your portfolio data, chat history, and uploaded documents are deleted within 30 days, except where we're legally required to retain certain records for longer.</p>
 
 <h2>8. Your rights</h2>
 <p>Under GDPR and similar laws, you have the right to:</p>
@@ -145,7 +151,7 @@ Contact: <a href="mailto:hello@naseehaai.app">hello@naseehaai.app</a></p>
 <p>To exercise any of these rights, use the in-app "Clear All Data" option in Settings, or contact us directly (see Section 11).</p>
 
 <h2>9. Security</h2>
-<p>Your data is protected using row-level security (each user can only access their own data at the database level), encryption in transit (HTTPS/TLS), and access controls on our backend infrastructure. No system is completely immune to risk, but we take reasonable, industry-standard measures to protect your information.</p>
+<p>Your data is protected using row-level security (each user can only access their own data at the database level), encryption in transit (HTTPS/TLS), and access controls on our backend infrastructure. Exchange API keys are additionally encrypted at rest (Supabase Vault) and cannot be read back by the app — only our server-side sync uses them, with read-only permissions. No system is completely immune to risk, but we take reasonable, industry-standard measures to protect your information.</p>
 
 <h2>10. Children's privacy</h2>
 <p>Naseeha is not directed at, and should not be used by, anyone under 18. We do not knowingly collect data from minors. If you believe a minor has provided us data, contact us and we will delete it.</p>
